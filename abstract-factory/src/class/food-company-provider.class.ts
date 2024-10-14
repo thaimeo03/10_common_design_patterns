@@ -1,4 +1,4 @@
-import { IAbstractCompanyProvider } from "./abstract-food-production-machine.class";
+import { IAbstractCompanyProvider } from "../interfaces/abstract-food-production-machine.interface";
 import { FoodMachineCompanyA } from "./food-machine-company-a.class";
 import { FoodMachineCompanyB } from "./food-machine-company-b.class";
 

@@ -1,5 +1,5 @@
-import { IAbstractCompanyProvider } from "./class/abstract-food-production-machine.class";
 import { FoodCompanyProvider } from "./class/food-company-provider.class";
+import { IAbstractCompanyProvider } from "./interfaces/abstract-food-production-machine.interface";
 import { IFoodMachine } from "./interfaces/food-machine.interface";
 
 class Main {
