@@ -1,20 +1,9 @@
 import { IFood } from "../interfaces/food.interface";
 import { CatFood } from "./cat-food.class";
-import { FoodProductionMachine } from "./food-production-machine.class";
+import { FoodMachine } from "./food-machine.class";
 
-export class CatFoodMachine extends FoodProductionMachine {
-    private ingredients: string[];
-
-    constructor(ingredients: string[]) {
-        super();
-        this.ingredients = ingredients;
-    }
-
+export class CatFoodMachine extends FoodMachine {
     getFood(): IFood {
         return new CatFood();
-    }
-
-    getIngredients(): string[] {
-        return this.ingredients;
     }
 }

@@ -1,14 +1,14 @@
 import { CatFoodMachine } from "./class/cat-food-machine.class";
 import { DogFoodMachine } from "./class/dog-food-machine.class";
-import { FoodProductionMachine } from "./class/food-production-machine.class";
+import { FoodMachine } from "./class/food-machine.class";
+
 
 class Main {
   static run() {
-    let foodMachine: FoodProductionMachine;
-    foodMachine = new CatFoodMachine(["flour", "eggs", "milk"]);
-    foodMachine.makeFood();
+    let foodMachine: FoodMachine = new CatFoodMachine();
+    foodMachine.makeFood();    
 
-    foodMachine = new DogFoodMachine(["apple", "banana", "milk"]);
+    foodMachine = new DogFoodMachine();
     foodMachine.makeFood();
   }
 }
