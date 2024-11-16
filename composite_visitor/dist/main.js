@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const file_class_1 = require("./class/file.class");
 const folder_class_1 = require("./class/folder.class");
-const print_info_vistitor_class_1 = require("./class/print-info-vistitor.class");
+const print_info_visitor_class_1 = require("./class/print-info-visitor.class");
 class Main {
     static run() {
         const folderA = new folder_class_1.Folder("FolderA");
@@ -19,8 +19,8 @@ class Main {
         folderA.showPath();
         // Adding a visitor
         console.log("\nAdding a visitor");
-        const visitor = new print_info_vistitor_class_1.PrintInfoVisitor();
-        folderB.accept(visitor);
+        const printInfoVisitor = new print_info_visitor_class_1.PrintInfoVisitor();
+        folderB.accept(printInfoVisitor);
     }
 }
 Main.run();

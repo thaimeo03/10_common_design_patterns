@@ -1,6 +1,6 @@
 import { File } from "./class/file.class";
 import { Folder } from "./class/folder.class";
-import { PrintInfoVisitor } from "./class/print-info-vistitor.class";
+import { PrintInfoVisitor } from "./class/print-info-visitor.class";
 
 class Main {
   static run() {
@@ -23,8 +23,8 @@ class Main {
 
     // Adding a visitor
     console.log("\nAdding a visitor");
-    const visitor = new PrintInfoVisitor();
-    folderB.accept(visitor);
+    const printInfoVisitor = new PrintInfoVisitor();
+    folderB.accept(printInfoVisitor);
   }
 }
 
